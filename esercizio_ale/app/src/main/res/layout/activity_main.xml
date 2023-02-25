@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#90baad"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="33dp"
+            android:text="Contatti"
+            />
+
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <ListView
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:id="@+id/elenco_contatti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#90baad" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/nome_editText"
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="aggiungi nome"
+                />
+
+            <EditText
+                android:id="@+id/numero_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="aggiungi numero"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aggiungi numero"
+                android:onClick="readContatto">
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
