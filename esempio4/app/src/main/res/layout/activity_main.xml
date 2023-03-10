@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/text_view"
+            android:background="#FCEFD4"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:id="@+id/edit_text"
+                android:layout_height="wrap_content"
+                android:hint="Lettera"/>
+
+            <Button
+                android:layout_marginLeft="15dp"
+                android:onClick="faiTentativo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prova"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tentativi: "/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/n_tentativi"
+                android:text="0 "/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
