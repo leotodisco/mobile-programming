@@ -131,20 +131,14 @@ public class MainActivity extends AppCompatActivity {
      */
     public void piazzaBombe() {
         int i = 0;
+        
         for(; i < 4; i++){
             Random ra = new Random();
             int interoGenerato = ra.ints(0, 15)
-                    .findFirst()
-                    .getAsInt();
-            System.out.println(interoGenerato);
+                                    .findFirst()
+                                    .getAsInt();
+
             Button x = lista.get(interoGenerato);
-            if(x.getTag().toString().equals("bomba")) {
-                System.out.println("numero kkkk \n");
-                interoGenerato = ra.ints(0, 15)
-                        .findFirst()
-                        .getAsInt();
-                x = lista.get(interoGenerato);
-            }
             x.setTag("bomba");
         }
 

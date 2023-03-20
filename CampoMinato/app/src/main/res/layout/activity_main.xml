@@ -152,11 +152,4 @@
         android:layout_below="@+id/griglia"
          android:layout_height="wrap_content"/>
 
-
-
-
-
-
-
-
 </RelativeLayout>
