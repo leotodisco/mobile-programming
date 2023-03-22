@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FCEFD4"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Riga"
+        />
+
+    <Switch
+        android:id="@+id/selezionatore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingPrefix"
+        android:textOn="Colonna"
+        android:textOff="Riga"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Colonna"
+            />
+
+    </LinearLayout>
+
+
+    <GridLayout
+        android:background="#FCEFD4"
+        android:layout_marginTop="50dp"
+        android:id="@+id/griglia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <Button
+            android:text="0"
+            android:tag="01"
+            android:onClick="mossa"
+            />
+
+        <Button
+            android:text="0"
+            android:tag="02"
+            android:onClick="mossa"
+            />
+
+        <Button
+            android:text="0"
+            android:tag="03"
+            android:onClick="mossa"
+            />
+
+        <Button
+            android:text="0"
+            android:tag="11"
+            android:onClick="mossa"
+            />
+
+        <Button
+            android:text="0"
+            android:tag="12"
+            android:onClick="mossa"
+            />
+
+        <Button
+            android:text="0"
+            android:tag="13"
+            android:onClick="mossa"
+            />
+
+        <Button
+            android:text="0"
+            android:tag="21"
+            android:onClick="mossa"
+            />
+
+        <Button
+            android:text="0"
+            android:tag="22"
+            android:onClick="mossa"
+            />
+
+        <Button
+            android:text="0"
+            android:tag="23"
+            android:onClick="mossa"
+            />
+
+
+
+    </GridLayout>
+
+</LinearLayout>
