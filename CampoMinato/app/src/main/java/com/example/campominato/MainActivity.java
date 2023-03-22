@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void piazzaBombe() {
         int i = 0;
-        
+
         for(; i < 4; i++){
             Random ra = new Random();
             int interoGenerato = ra.ints(0, 15)
