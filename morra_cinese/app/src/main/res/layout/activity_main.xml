@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FCEFD4"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avversario"
+            android:textSize="40sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center"
+            android:hint="Scelta Avversario"
+            android:textSize="20sp"
+            android:id="@+id/scelta_npc"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="275dp"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:text="gioca"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:onClick="aggiornaUi"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="160dp"
+            android:layout_width="match_parent"
+            android:id="@+id/container_scelte"
+            android:paddingLeft="20dp"
+            android:paddingEnd="20dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:onClick="mossa"
+                android:tag="forbici"
+                android:text="forbici"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:layout_marginEnd="10dp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:onClick="mossa"
+                android:text="sasso"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:layout_marginEnd="10dp"
+                android:tag="sasso"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:onClick="mossa"
+                android:text="carta"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:layout_marginEnd="10dp"
+                android:tag="carta"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
